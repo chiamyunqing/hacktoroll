@@ -6,7 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .forms import Challenge2Form
 
 def homepage(request):
-    return render(request, 'challenges/homepage.html')
+    return render(request, 'challenges/index.html')
 
 class challenge2(LoginRequiredMixin, View):
     def get(self, request):

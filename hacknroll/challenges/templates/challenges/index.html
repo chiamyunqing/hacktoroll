@@ -1,0 +1,287 @@
+<!-- Code adapted from bootstrap-template -->
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% block content %}
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>HackToRoll</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href='{% static "/assets/img/favicon.png" %}' rel="icon">
+  <link href='{% static "/assets/img/apple-touch-icon.png"%}' rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href='{% static "assets/vendor/bootstrap/css/bootstrap.min.css"%}' rel="stylesheet">
+  <link href='{% static "/assets/vendor/icofont/icofont.min.css" rel="stylesheet"%}'>
+  <link href='{% static "/assets/vendor/boxicons/css/boxicons.min.css"%}' rel="stylesheet">
+  <link href='{% static "/assets/vendor/owl.carousel/assets/owl.carousel.min.css"%}' rel="stylesheet">
+  <link href='{% static "/assets/vendor/venobox/venobox.css"%}' rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href='{% static "/assets/css/style.css"%}' rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Baker - v2.2.0
+  * Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto" style="color: white;">HackToRoll</h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="{% url 'challenges:solutionpage' %}">Solutions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container position-relative">
+      <h1>HackToRoll</h1>
+      <h2>HackToRoll is a fun and educational website meant for beginners to learn about web pages independently. </h2>
+      <h2>"Learning is experience. Everything else is just information." - Albert Einstein</h2>
+      <a href="{% url 'challenges:c2' %}" class="btn-get-started scrollto">Start Hacking!</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+
+            <h3>What is HackToRoll?</h3>
+            <div class="col-md-6">
+            <p>
+              HackToRoll consists of four challenges that aim to give some insights on web pages through experiential learning.
+            </p>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <i class="bx bx-cube-alt"></i>
+                <h4>How It Started</h4>
+                <p>This project is developed for Hack&Roll 2021. As beginners ourselves in web development, we took online courses to upskill ourselves.
+                  During the process, we felt that there could be more fun online resources to encourage people to explore the internal workings of webpages and that is how HackToRoll began.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Mission</h4>
+                <p>To inspire amateurs to take the leap and explore.</p>
+              </div>
+              <div class="col-md-6">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Future Plans</h4>
+                <p>As this is our first hackathon, we are always looking to improve. We welcome any ideas to improve and extend the challenges.</p>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Below are some (fake) reviews from users who have tried our educational website.</p>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Using Djikstra's algorithm, I also cannot finish the challenges in the shortest time. Mindblown!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src='{% static "/assets/img/testimonials/testimonials-1.jpg"%}' class="testimonial-img" alt="">
+            <h3>Adsger Djikstra </h3>
+            <h4>Algorithm Expert</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              My kids had lots of fun cracking the challenges in HackToRoll. This gave me some time for myself to have fun too.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src='{% static "/assets/img/testimonials/testimonials-2.jpg"%}' class="testimonial-img" alt="">
+            <h3>Sara Tiger</h3>
+            <h4>Mother of 2 primary school children</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              The only network you need to learn in life - computer networking. It is done so easily through HackToRoll!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src='{% static "/assets/img/testimonials/testimonials-3.jpg"%}' class="testimonial-img" alt="">
+            <h3>Jena Gurl</h3>
+            <h4>Woman In Tech (WIT)</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              The challenges are too simple for me and failed to stimulate my brain. But it may be beneficial for beginners.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src='{% static "/assets/img/testimonials/testimonials-4.jpg"%}' class="testimonial-img" alt="">
+            <h3>Matt Guy</h3>
+            <h4>Man In Tech (MIT)</h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              I use this to teach my networking classes in Zoom. 10/10.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src='{% static "/assets/img/testimonials/testimonials-5.jpg"%}' class="testimonial-img" alt="">
+            <h3>John Speedy</h3>
+            <h4>Zoom Lecturer</h4>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Team MoneyFace</h2>
+          <p>We are team MoneyFace and we like the smell of cash.
+            Disclaimer: The faces below are taken for free online. We look better irl actually.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member-img">
+              </div>
+              <div class="member-info">
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src='{% static "/assets/img/team/team-2.jpg"%}' class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Chiam Yun Qing</h4>
+                <span>Joker 1</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src='{% static "/assets/img/team/team-4.jpg"%}' class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Nicole Ren JiaHui</h4>
+                <span>Joker 2</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <div class="member-img">
+              </div>
+              <div class="member-info">
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="info-box mt-4">
+          <i class="bx bx-envelope"></i>
+          <h3>Email Us</h3>
+          <p>Nicole: e0420863@u.nus.edu <br>Yun Qing: e0424901@u.nus.edu</p>
+        </div>
+    </section>
+<!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Baker</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src='{% static "/assets/vendor/jquery/jquery.min.js"%}'></script>
+  <script src='{% static "/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"%}'></script>
+  <script src='{% static "/assets/vendor/jquery.easing/jquery.easing.min.js"%}'></script>
+  <script src='{% static "/assets/vendor/php-email-form/validate.js"%}'></script>
+  <script src='{% static "/assets/vendor/waypoints/jquery.waypoints.min.js"%}'></script>
+  <script src='{% static "/assets/vendor/counterup/counterup.min.js"%}'></script>
+  <script src='{% static "/assets/vendor/owl.carousel/owl.carousel.min.js"%}'></script>
+  <script src='{% static "/assets/vendor/isotope-layout/isotope.pkgd.min.js"%}'></script>
+  <script src='{% static "/assets/vendor/venobox/venobox.min.js"%}'></script>
+
+  <!-- Template Main JS File -->
+  <script src='{% static "/assets/js/main.js"%}'></script>
+
+</body>
+{% endblock %}
+</html>
+

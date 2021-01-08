@@ -4,23 +4,25 @@
 {% block content %}
 <style>
 body {
-      text-align: center;
-            color: brown;
+  text-align: center;
+  color: #663300;
 }
 img.beauty {
-      max-width:40%;
-            max-height:30%;
+  max-width:40%;
+  max-height:30%;
 }
 </style>
-
 <body>
-    <h1> Challenge #2 </h1>
-    <h2> Clue: A picture is worth a thousand words </h2>
-    <p><a href={% url 'challenges:cookie_view' %} target="_blank"><img class="beauty" src="{% static 'challenges/fortune.jpg' %}" ></a></p>
-    <form action="/chal2/" method="post">
-        {% csrf_token %}
-        {{ form | crispy }}
-        <input type="submit" value="Submit">
-    </form>
+<h1> Challenge #2: The Fortune Teller </h1>
+<h4> Good job! You have been let in through the gates, now go find your fortune </h4>
+<h4> Clue: A picture is worth a thousand words </h4>
+<p><a href={% url 'challenges:cookie_view' %} target="_blank"><img class="beauty" src="{% static 'challenges/fortune.jpg' %}" ></a></p>
+<form action="/chal2/" method="post">
+    {% csrf_token %}
+    {{ form | crispy }}
+
+    <input type="submit" value="Submit">
+</form>
 </body>
 {% endblock %}
+
