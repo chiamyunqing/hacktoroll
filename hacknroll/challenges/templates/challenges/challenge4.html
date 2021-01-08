@@ -1,0 +1,25 @@
+{% extends "base_bootstrap.html" %}
+{% block content %}
+{% load static %}
+<style>
+body {
+      background-color: #33cc33;
+      text-align: center;
+      color: white;
+}
+</style>
+
+<body>
+    <h1>Challenge #4: Get Outta Here</h1>
+    <h4>Clue: How do chameleons escape?</h4>
+    <p><img src="{% static 'challenges/chameleon.gif' %}"></p>
+    <a style="color: #33cc33" name="myLink" href="{% url 'logout' %}" onclick="return test();">Log Out</a>
+    
+    <script type="text/javascript">
+        function test() {
+            var header = document.getElementsByName("myLink")[0];
+            return header.style.color != "rgb(51, 204, 51)";
+        }
+    </script>
+</body>
+{% endblock %}

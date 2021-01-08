@@ -29,3 +29,7 @@ def cookieview(request):
 class challenge3(LoginRequiredMixin, View):
     def get(self, request):
         return render(request, 'challenges/challenge3.html')
+
+class challenge4(LoginRequiredMixin, View):
+    def get(self, request):
+        return render(request, 'challenges/challenge4.html')
