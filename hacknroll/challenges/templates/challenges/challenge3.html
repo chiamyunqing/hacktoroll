@@ -1,0 +1,56 @@
+{% extends "base_bootstrap.html" %}
+
+
+{% block content %}
+
+<style>
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+button {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+</style>
+<body>
+<h1>Challenge #3</h1>
+<h4>Clue: Follow the Path</h4>
+
+<p>
+<button onclick="display()">I need more clue >< </button>
+</p>
+
+<div id="clue">
+</div>
+
+<script>
+shown = false;
+
+function display() {
+    console.log(shown)
+    if (!shown) {
+        var x = document.createElement("p");
+        x.innerHTML = "A URL consists of many components. We are just looking at the path here. The path identifies the specific resource in the host that the web client wants to access. For example, /apples/pears/.";
+        document.getElementById('clue').appendChild(x);
+        shown = true;
+    }
+}
+</script>
+
+{% load static %}
+<img src="{% static 'challenges/path.png' %}" alt="Path" width="50%" height="40%">
+</body>
+
+{% endblock %}
+

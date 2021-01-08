@@ -17,7 +17,7 @@ img.beauty {
     <h1> Challenge #2 </h1>
     <h2> Clue: A picture is worth a thousand words </h2>
     <p><a href={% url 'challenges:cookie_view' %} target="_blank"><img class="beauty" src="{% static 'challenges/fortune.jpg' %}" ></a></p>
-    <form action="/c2/" method="post">
+    <form action="/chal2/" method="post">
         {% csrf_token %}
         {{ form | crispy }}
         <input type="submit" value="Submit">

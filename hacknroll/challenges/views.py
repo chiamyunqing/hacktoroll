@@ -25,3 +25,7 @@ def cookieview(request):
         response = HttpResponse(html)
         response.set_cookie("fortune", "r0lls0fc4sh4ndb1lls")
         return response
+
+class challenge3(LoginRequiredMixin, View):
+    def get(self, request):
+        return render(request, 'challenges/challenge3.html')
