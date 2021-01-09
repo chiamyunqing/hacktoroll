@@ -108,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LOGOUT_REDIRECT_URL = '/chal2'
+LOGOUT_REDIRECT_URL = '/solutions'
 
 LOGIN_REDIRECT_URL = '/chal2'
 

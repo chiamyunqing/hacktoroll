@@ -8,6 +8,9 @@ from .forms import Challenge2Form
 def homepage(request):
     return render(request, 'challenges/index.html')
 
+def solutionpage(request):
+        return render(request, 'challenges/inner-page.html')
+
 class challenge2(LoginRequiredMixin, View):
     def get(self, request):
         form = Challenge2Form()
