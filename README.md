@@ -1,8 +1,9 @@
 
 # HackToRoll
 
-Another project by Team MoneyFace. This project was created for Hack&Roll 2021.
+Another project by Team MoneyFace. This project was created for [Hack&Roll 2021](https://devpost.com/software/hacktoroll). <br>
 HackToRoll consists of four challenges that aim to give beginners some insights on web pages through experiential learning. 
 The project is created with Django. <br>
 Code credit: Some of the code was adapted from Coursera courses and bootstrap. <br>
-Link to website: moneyface.pythonanywhere.com
+Link to website: moneyface.pythonanywhere.com <br>
+
